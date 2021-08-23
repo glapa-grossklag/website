@@ -8,16 +8,18 @@
     background: #d3869b;
 }
 
-body {
-    background: #282828;
-    color:      #ebdbb2;
-
+main {
     font-family: monospace, monospace;
     max-width: 38rem;
     padding: 2rem;
     margin: auto;
     border: 2px solid #ebdbb2;
     border-radius: 5px;
+}
+
+body {
+    background: #282828;
+    color:      #ebdbb2;
 }
 
 pre {
