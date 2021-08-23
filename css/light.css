@@ -1,3 +1,12 @@
+:root {
+    --background-color: #fbf1c7;
+    --foreground-color: #3c3836;
+    --accent-color:     #928374;
+
+    --code-background-color: #282828;
+    --code-foreground-color: #ebdbb2;
+}
+
 @media only screen and (max-device-width: 736px) {
     main {
         padding: 0rem;
@@ -13,28 +22,29 @@ main {
     max-width: 38rem;
     padding: 2rem;
     margin: auto;
-    border: 2px solid #ebdbb2;
+    border: 2px solid var(--accent-color);
     border-radius: 5px;
 }
 
 body {
-    background: #fbf1c7;
-    color:      #3c3836;
+    background: var(--background-color);
+    color: var(--foreground-color);
 }
 
 pre {
-    font-size: 110%;
-    background-color: #ebdbb2;
+    color: var(--code-foreground-color);
+    background-color: var(--code-background-color);
     padding: 1em;
-    border: 0px;
     border-radius: 5px;
 }
 
 code {
-    font-size: 110%;
-    background-color: #ebdbb2;
+    font-size: 120%;
+    color: var(--code-foreground-color);
+    background-color: var(--code-background-color);
     padding: 0.1em;
-    border: 0px solid;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     border-radius: 5px;
 }
 
@@ -48,7 +58,7 @@ h1, h2, h3, h4, h5 {
 }
 
 blockquote {
-    border-left: 1px solid #655c54;
+    border-left: 2px solid var(--accent-color);
     margin: 0.5em 10px;
     padding: 0.5em 10px;
 }
@@ -59,7 +69,7 @@ img {
 }
 
 hr {
-    border: 1px solid #ebdbb2;
+    border: 1px solid var(--accent-color);
     max-width: 50%;
 }
 
